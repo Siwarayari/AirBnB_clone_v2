@@ -11,7 +11,7 @@ app = Flask(__name__)
 @app.route('/', strict_slashes=False)
 def hbnb():
     """
-        fn to display Hello HBNB!
+         display Hello HBNB!
         in the route page
     """
     return 'Hello HBNB!'
@@ -20,14 +20,14 @@ def hbnb():
 @app.route('/hbnb', strict_slashes=False)
 def hbnb_():
     """
-        fn to display HBNB
+         display HBNB
         in the route page
     """
     return 'HBNB'
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def cisfun(text):
+def c_is_fun(text):
     """display C  followed by the value of the text variable"""
     return 'C ' + text.replace('_', ' ')
 
