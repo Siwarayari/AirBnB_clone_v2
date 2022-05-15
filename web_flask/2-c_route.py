@@ -11,7 +11,7 @@ def hbnb():
 
 
 @app.route('/hbnb', strict_slashes=False)
-def hbnb():
+def about():
     """ display HBNB"""
     return 'HBNB'
 
@@ -24,3 +24,4 @@ def c(text):
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000)
+
